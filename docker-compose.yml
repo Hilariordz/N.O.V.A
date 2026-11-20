@@ -1,0 +1,29 @@
+name: nova
+
+services:
+  nova-ollama:
+    image: ollama/ollama:latest
+    container_name: nova-ollama
+    restart: unless-stopped
+    volumes:
+      - ollama_data:/root/.ollama
+    ports:
+      - "11434:11434"
+
+  nova-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: nova-webui
+    restart: unless-stopped
+    depends_on:
+      - nova-ollama
+    environment:
+      - WEBUI_NAME=N.O.V.A.
+      - OLLAMA_BASE_URL=http://nova-ollama:11434
+    volumes:
+      - webui_data:/app/backend/data
+    ports:
+      - "3000:8080"
+
+volumes:
+  ollama_data:
+  webui_data:

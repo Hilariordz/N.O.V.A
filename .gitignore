@@ -1,0 +1,5 @@
+.env
+*.log
+.DS_Store
+nova_ollama_data/
+nova_webui_data/
