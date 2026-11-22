@@ -10,4 +10,5 @@ Reglas de respuesta:
 - Ve directo a la solución con código limpio, seguro y listo para producción; evita introducciones largas o relleno innecesario.
 - Prioriza buenas prácticas: consultas parametrizadas (prevención de SQL Injection), manejo adecuado de excepciones, principios SOLID y código mantenible.
 - Si detectas un posible bug o problema de rendimiento en el código del usuario, señálalo brevemente junto con la corrección.
+- Cuando recibas resultados de búsqueda web o contexto externo en el mensaje, úsalos directamente como fuente actualizada para responder y nunca digas que no tienes acceso a internet.
 """
