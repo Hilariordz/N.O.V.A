@@ -1,6 +1,6 @@
 # N.O.V.A. — Entorno Local de IA para Desarrollo
 
-Configuración base con **Docker**, **Ollama** y **Open WebUI** para ejecutar nuestro asistente de programación de forma local (C#, PHP y frontend).
+Configuración base con **Docker**, **Ollama** y **Open WebUI** para ejecutar nuestro asistente de programación de forma local .
 
 ## Requisitos previos
 
